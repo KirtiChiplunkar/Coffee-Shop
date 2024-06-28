@@ -1,0 +1,285 @@
+/* Global reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Common element styles */
+
+body {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+h1 {
+  font-size: 56px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 48px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+/* Common classes */
+.active-link {
+  color: #fcc419;
+}
+
+.active-icon {
+  stroke: rgb(252, 196, 25);
+}
+
+.spacing-container {
+  padding: 200px 178px;
+}
+
+/* Header styles */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #000;
+  color: #fff;
+
+  font-weight: 500;
+  font-size: 18px;
+  padding: 20px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+
+  list-style: none;
+}
+
+.icons {
+  stroke: #fff;
+  width: 24px;
+  height: 24px;
+}
+
+/* Hero Section Styles */
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  height: 90vh;
+  background-image: linear-gradient(
+      rgba(106, 106, 106, 0.4),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url(nguyen-tong-hai-van-pkj935eY62A-unsplash.jpg);
+  background-size: cover;
+}
+.main-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 40%;
+  padding: 30px;
+}
+
+.main-description {
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.5;
+}
+
+/* btn style */
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 12px 48px;
+  border: #fcc419 solid 2px;
+  border-radius: 5px;
+  color: #fcc419;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.btn-active {
+  color: #000;
+  background-color: #fcc419;
+}
+
+/* Our services section styles */
+
+.services-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 15px #fcc419 solid;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 48px 72px 2fr 0.5fr 0.5fr;
+  row-gap: 30px;
+  column-gap: 10px;
+
+  align-items: center;
+  justify-items: center;
+}
+
+.services-heading {
+  grid-column: 2/3;
+  align-self: center;
+}
+
+.services-description {
+  grid-column: 1/-1;
+}
+
+h3 {
+  font-size: 36px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Menu section styles */
+.menu {
+  display: flex;
+  gap: 20px;
+
+  background-color: #000;
+  color: #fff;
+}
+
+.menu-contents {
+  width: 75%;
+
+  padding: 20px 0 20px 20px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 48px 72px 1fr 1fr 1fr;
+  -gap: 15px;
+
+  column-gap: 20px;
+  row-gap: 30px;
+}
+.menu-img {
+  width: 30%;
+}
+
+/* Price card styles */
+.price-card {
+  font-size: 24px;
+  font-weight: 500;
+  border: solid #fcc419 1px;
+  border-radius: 10px;
+
+  padding-left: 10px;
+
+  display: grid;
+  grid-template-columns: 2fr 0.5fr;
+  align-items: center;
+  justify-items: start;
+
+  gap: 10px;
+}
+
+.card-description {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.menu-name,
+.menu-btn {
+  grid-column: 1/-1;
+  justify-self: center;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* About us styles */
+
+.about-us-heading {
+  margin-left: 40%;
+  margin-bottom: 30px;
+}
+
+.about-us {
+  margin: 0 100px;
+  background-color: #ffe8cc;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+
+.about-us-img {
+  width: 100%;
+  height: 254px;
+  object-fit: cover;
+}
+
+.about-us-description {
+  padding: 40px;
+  line-height: 1.5;
+}
+
+/* About Coffee Beans section */
+
+.about-coffee-beans {
+  background-image: url(tim-mossholder-YC6RVdoTtIk-unsplash.jpg);
+  background-size: cover;
+}
+
+.filler {
+  padding: 48px;
+  background-color: #ffe8cc;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+/* Footer styles */
+
+footer {
+  background-color: #000;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+
+  padding: 30px 0;
+}
+
+footer p {
+  text-align: center;
+}
+
+footer a:link,
+footer a:visited,
+footer a:active {
+  text-decoration: none;
+  color: #fcc419;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* 
+linear-gradient(rgba(252, 196, 25, 0.4), rgba(0, 0, 0, 0.8)),
+rgb(252, 196, 25); */
